@@ -1,6 +1,11 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 const Pricing = () => {
+  const navigate=useNavigate()
+
+  const pricecomp=()=>{
+    navigate('/pricingCompare')
+  }
   return (
     <>
       <div className="flex justify-center items-center flex-col my-16 space-x-4 overflow-hidden">
@@ -14,6 +19,9 @@ const Pricing = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 px-8  text-zinc-800 mt-10">
+
+
+      
         <div className="flex flex-col items-center bg-slate-100 p-8 rounded-lg shadow-lg max-w-sm">
           <div>
             <h2 className="font-extrabold text-3xl text-center mb-2">
@@ -48,7 +56,7 @@ const Pricing = () => {
                 viewBox="0 0 24 24"
                 fill="currentColor"
                 aria-hidden="true"
-                className="w-4 h-4 ml-1 fill-orange-300"
+                className="w- h-4 ml-1 fill-orange-300"
               >
                 <path
                   fillRule="evenodd"
@@ -122,19 +130,22 @@ const Pricing = () => {
               Basic Support
             </p>
             <div className="flex justify-center mt-8 ">
-              <button className=" px-4 py-2 border-violet-400 border-4 hover:bg-violet-100 rounded-xl">
+              <button className=" px-4 py-2 border-violet-400 border-4 hover:bg-violet-100 rounded-xl" onClick={pricecomp}>
                 Get Started
               </button>
             </div>
           </div>
         </div>
+
+
+
         <div className="flex flex-col items-center bg-gradient-to-br from-blue-100 via-orange-100 to-purple-100 p-8 rounded-lg shadow-lg relative  border-orange-200 max-w-sm">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
             aria-hidden="true"
-            className="w-20 h-20 absolute -top-11 -left-11 fill-red-400"
+            className="w-16 h-16 absolute -top-9 -left-8 fill-red-400"
           >
             <path
               fillRule="evenodd"
@@ -277,13 +288,15 @@ const Pricing = () => {
             </div>
           </div>
         </div>
+
+
         <div className="flex flex-col items-center bg-gradient-to-br from-blue-100 via-orange-100 to-purple-100 p-8 rounded-lg shadow-lg relative  border-orange-200 max-w-sm">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
             aria-hidden="true"
-            className="w-20 h-20 absolute -top-11 -left-11 fill-red-400"
+            className="w-16 h-16 absolute -top-9 -left-8 fill-red-400"
           >
             <path
               fillRule="evenodd"

@@ -9,6 +9,7 @@ import Book from "./pages/Book";
 import Footer from "./components/Footer";
  import TopSection from "./components/TopSection";
 import Blog from "./pages/Blog";
+import PricingDetails from "./components/PricingDetails";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/service" element={<Services />} />
         <Route path="/pricing" element={<Price />} />
         <Route path="/book" element={<Book />} />
+        <Route path="/pricingCompare" element={<PricingDetails />} />
       </Routes>
     <Footer />
     </>

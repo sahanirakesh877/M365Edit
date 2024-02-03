@@ -3,7 +3,7 @@ import React from 'react'
 const Services = () => {
   return (
     <>
-<div className="max-w-7xl  px-5 py-20 container mx-auto">
+<div className="max-w-7xl  px-5 py-8 container mx-auto">
   <div className="text-center">
     <h2 className="font-semibold  text-4xl  text-blue-700 ">Service We Provide</h2>
     <p className=" max-w-lg mx-auto my-4 text-gray-500">. Microsoft 365, formerly known as Office 365, is a suite of cloud-based productivity tools and services offered by Microsoft.</p>
