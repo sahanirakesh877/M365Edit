@@ -1,16 +1,17 @@
 import React from "react";
 
-const SirkoReview = () => {
+const Review = () => {
   return (
     <>
-      <div className="px-2 py-4 border-t-2 bg-gray-200 text-center">
-        <p className="text-blue-700 text-3xl">MEET OUR PROFESSIONAL</p>
+     
+      <section className="bg-gray-300 py-16">
+      <div className="px-2  pb-10  text-center">
+        <p className="text-center text-blue-700 font-semibold text-4xl lg:text-4xl md:text-xl sm:text-lg ">Meet Our Professional</p>
       </div>
-      <section className="bg-gray-200">
-        <div className="container mx-auto py-10 px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto  px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-            <div className="max-w-lg mx-auto">
-              <div className="h-60">
+            <div className="max-w-sm mx-auto">
+              <div className="h-60 ">
                 <img
                   src="https://img.freepik.com/free-photo/businessman-dress-code-holding-black-jacket-his-arm_114579-15946.jpg?w=826&t=st=1707129188~exp=1707129788~hmac=4665fbece2e960aadad0db971f99af86cdcf794474cdc4aa3e8167eafbd4e0bf"
                   alt=""
@@ -52,4 +53,4 @@ const SirkoReview = () => {
   );
 };
 
-export default SirkoReview;
+export default Review;

@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   return (
     <>
       <header>
@@ -9,7 +12,7 @@ const Header = () => {
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <Link to={'/'} className="flex items-center">
               <img
-                src="/M365logo2.jpeg"
+                src="/logo.png"
                 className="mr-3 h-6  w-full sm:h-16"
                 alt="m365 Logo"
               />
@@ -19,8 +22,8 @@ const Header = () => {
             </Link>
             <div className="flex items-center lg:order-2">
               <Link
-                to={"/book"}
-                className="text-white bookbtn bg-sec-brand  hover:bg-blue-800     font-semibold rounded-lg text-md px-4 lg:px-5 py-2 lg:py-2.5 mr-2     "
+                to={"/contact"}
+                className="text-white bookbtn bg-sec-brand  rounded-full hover:bg-blue-800     font-semibold text-md px-4 lg:px-5 py-2 lg:py-2.5 mr-2   "
               >
                 Get Inquiry
               </Link>
@@ -35,6 +38,7 @@ const Header = () => {
                 <svg
                   className="w-6 h-6"
                   fill="currentColor"
+                  color="bg-[#0C2D57]"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
                 >

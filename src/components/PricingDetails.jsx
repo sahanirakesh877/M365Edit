@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const PricingDetails = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   return (
     <>
       <section className="text-gray-700 body-font overflow-hidden border-t border-gray-200 container mx-auto">
