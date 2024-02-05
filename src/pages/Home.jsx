@@ -6,6 +6,7 @@ import Services from "./Services";
 import Contact from "../components/Contact";
 import Blog from "./Blog";
 // import PhotoComp from "../components/PhotoComp";
+import SirkoReview from './../components/SirkoReview';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
 {/* <PhotoComp/> */}
 <VideoCard/>
 <Services/>
+<SirkoReview/>
 <Pricing/>
 <Contact/>
 <Blog/>
