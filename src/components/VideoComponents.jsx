@@ -15,7 +15,7 @@ const VideoCard = () => {
   const responsive = {
     0: { items: 2 },
     568: { items: 2 },
-    1024: { items: 4 },
+    1024: { items: 3 },
   };
 
   return (
@@ -42,10 +42,10 @@ const VideoCard = () => {
           lazyLoad
         >
           {images.map((image, index) => (
-            <div key={index} className="w-[350px] h-[250px] px-8">
+            <div key={index} className="w-[440px] h-[220px] px-8">
               <img 
                 src={image}
-                className="sliderimg object-fill border "
+                className="sliderimg object-fit border "
                 alt={`image-${index}`}
                 style={{ width: "100%", height: "auto" }}
               />

@@ -5,14 +5,14 @@ const Banner = () => {
     <>
       <section className="bg-white  dark:bg-gray-900 overflow-hidden">
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-32 lg:px-12">
-          <p className="text-center text-xl lg:pb-3 poppins-medium-italic">
+          <p className="text-center  lg:text-[25px] lg:pb-3 kalam-light  pb-1">
           Unlock Peace of Mind: Affordable Cyber Security for Your  Business{" "}
           </p>
-          <h1 className="mb-4 text-4xl poppins-semibold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl dark:text-white ">
-          We Secure and Manage Microsoft 365 Environment for Small to Medium Businesses
+          <h1 className="mb-4  py-2 poppins-medium tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl text-3xl dark:text-white ">
+          We Secure and Manage Microsoft 365 <br /> Environment for Small to Medium Businesses
           </h1>
-          <p className="mb-8 text-lg poppins-medium text-gray-600 lg:text-xl sm:px-16 xl:px-42 dark:text-gray-400">
-          Discover how M365 can boost your small to medium business with our customized solutions, support, and advice.
+          <p className="mb-8 text-md poppins-light text-gray-600 lg:text-xl sm:px-16 xl:px-42 dark:text-gray-400">
+          Discover how M365 can boost your small to medium business with our <br /> customized solutions, support, and advice.
           </p>
           <div className="flex flex-col mb-8 lg:mb-20 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
             <a

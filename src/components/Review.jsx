@@ -8,24 +8,25 @@ const Review = () => {
   };
 
   return (
-    <div className="container mx-auto flex flex-col md:flex-row items-start py-20 px-6 lg:px-0">
+    <>
+      <div className="servicecss">
+      <div className="container mx-auto flex items-start flex-col  md:flex-row  py-24 px-6 lg:px-0 ">
       {/* Left Side (Text) */}
-      <div className="md:w-2/3 md:pr-6">
-        <h2 className="text-3xl font-semibold poppins-medium text-brand   mb-4">
+      <div className="md:w-1/2 md:pr-20">
+        <h2 className="text-3xl font-semibold poppins-medium text-brand  mb-4 ">
           Why M365 Pros ?
         </h2>
-        <p className="{`text-lg mb-2 poppins-light text-justify ${showMore ? '' : 'truncate'}`}">
-          We are a group of Microsoft Certified professionals with more than 10+
-          years of experience each providing support, consultation, and
-          management service for SMB’s to manage/secure their M365 Environment.
+        <p className="{`text-lg mb-4 poppins-light text-justify ${showMore ? '' : 'truncate'}`}">
+          We are a group of Microsoft Certified professionals with more than 10+ years of experience each providing support, consultation, and management service for SMB’s to manage/secure their M365 Environment.
         </p>
-        <p className="{`text-lg mb-2 poppins-light text-justify ${showMore ? '' : 'truncate'}`}">
+
+        <p className="{`text-lg mb-4 poppins-light text-justify ${showMore ? '' : 'truncate'}`}">
           We have learned from our experience of working with various businesses
           from USA, Canada, Australia, UK, and more, that managing Microsoft 365
           services can be challenging for small and medium business owners as
           their companies expand.
         </p>
-        <p className="{`text-lg mb-2 poppins-light text-justify ${showMore ? '' : 'truncate'}`}">
+        <p className="{`text-lg mb-4 poppins-light text-justify ${showMore ? '' : 'truncate'}`}">
           This is because Microsoft 365 is not just an email service, but rather
           a comprehensive suite of tools designed to help businesses run
           smoothly. From productivity tools like Word, Excel, and PowerPoint to
@@ -35,7 +36,7 @@ const Review = () => {
 
         {!showMore && (
           <button
-            className="bg-brand poppins-regular text-white border border-blue-600 px-8 py-2 rounded-full hover:bg-blue-900 hover:border-blue-900 transition duration-300 ease-in-out"
+            className="bg-brand poppins-regular text-white border border-blue-600 px-8 py-2 mt-6  rounded-full hover:bg-blue-900 hover:border-blue-900 transition duration-300 ease-in-out"
             onClick={toggleShowMore}
           >
             Read More
@@ -77,7 +78,7 @@ const Review = () => {
       </div>
 
       {/* Right Side (Image) */}
-      <div className="md:w-1/3 mt-6 md:mt-0 ">
+      <div className="md:w-1/2 mt-6 md:mt-0 ">
         <img
           src="https://img.freepik.com/premium-photo/community-cloud-storage-sync-secure_960782-40317.jpg?w=740"
           alt="About Us"
@@ -85,6 +86,9 @@ const Review = () => {
         />
       </div>
     </div>
+      </div>
+    </>
+  
   );
 };
 

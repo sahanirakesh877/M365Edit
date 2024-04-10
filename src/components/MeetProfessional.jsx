@@ -1,7 +1,6 @@
 import React from "react";
 import { FaCrown } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
-import { TiLocation } from "react-icons/ti";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
@@ -24,9 +23,9 @@ const MeetProfessional = () => {
 
   return (
     <>
-    <div className="container mx-auto py-12">
-    <h2 className="text-center poppins-bold lg:text-3xl text-2xl px-3  text-brand ">
-        MEET OUR PROFESSIONALS
+    <div className="container mx-auto py-24 bg-white">
+    <h2 className="text-center poppins-bold lg:text-4xl text-2xl px-3  text-brand  capitalize">
+        Meet Our Professional
       </h2>
 
       <div className="container gap-4 mx-auto flex flex-col md:flex-row items-start py-12 px-6 lg:px-0">
@@ -42,25 +41,17 @@ const MeetProfessional = () => {
             </span>
             <div>
               <h3 className="poppins-semibold  text-2xl">Jeevan M.</h3>
-              <p className=" text-gray-800 poppins-regular">
+              <p className=" text-gray-800 poppins-regular pt-2">
                 Microsoft 365 | Azure | Intune | Cloud Administrator
               </p>
-              <div className="flex items-center justify-start pt-2">
-                <span className="">
-                  <TiLocation className="text-green-800 text-2xl" />
-                </span>
-                <p className="text-gray-500 poppins-regular font-semibold">
-                  {" "}
-                  Kathmandu, Nepal{" "}
-                </p>
-              </div>
+              
               <div className="flex justify-between items-center py-4">
                 <div className="flex items-center ">
                   <span className="mr-2">
                     <FaCrown className="text-blue-500 text-xl" />
                   </span>
                   <p className="text-gray-700 poppins-regular font-semibold">
-                    95% Job Success
+                    100% Job Success
                   </p>
                 </div>
                 <div className="flex items-center">
@@ -115,18 +106,10 @@ const MeetProfessional = () => {
             </span>
             <div>
               <h3 className="poppins-semibold  text-2xl">Sachin Jung K.</h3>
-              <p className=" text-gray-800 poppins-regular">
+              <p className=" text-gray-800 poppins-regular pt-2">
                 M365 Expert | Defender for M365 | Intune Expert
               </p>
-              <div className="flex items-center justify-start pt-2">
-                <span className="">
-                  <TiLocation className="text-green-800 text-2xl" />
-                </span>
-                <p className="text-gray-500 poppins-regular font-semibold">
-                  {" "}
-                  Kathmandu, Nepal{" "}
-                </p>
-              </div>
+             
               <div className="flex justify-between items-center py-4">
                 <div className="flex items-center ">
                   <span className="mr-2">
@@ -141,7 +124,7 @@ const MeetProfessional = () => {
                     <FaStar className="text-yellow-600 text-xl" />
                   </span>
                   <p className="text-gray-700 poppins-regular font-semibold">
-                    Rising Talent
+                   Top Rated Plus
                   </p>
                 </div>
               </div>

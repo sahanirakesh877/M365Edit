@@ -5,7 +5,10 @@ import { Link } from "react-router-dom";
 const Services = () => {
   return (
     <>
-      <div className="max-w-7xl  px-5 py-8 container mx-auto">
+    <div className="servicecss">
+
+
+      <div className="max-w-7xl  px-5 py-24 container mx-auto">
         <div className="text-center">
         
           <h2 className="font-semibold  text-4xl  poppins-semibold text-brand ">
@@ -16,13 +19,13 @@ const Services = () => {
             cloud-based productivity tools and services offered by Microsoft.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-10  mt-10">
+        <div className="grid md:grid-cols-2 gap-10  mt-10 ">
           {servicedata.map((a, id) => {
             return (
               <>
                 <Link to={`/service/${a.id}`}>
                   <div
-                    className="flex gap-4 items-start border-t  p-4 relative"
+                    className="flex gap-4 items-start border-t    p-4 relative"
                     key={id}
                   >
                     <span className=" bg-violet-500/10 p-4 rounded-full">
@@ -48,6 +51,7 @@ const Services = () => {
             );
           })}
         </div>
+      </div>
       </div>
     </>
   );

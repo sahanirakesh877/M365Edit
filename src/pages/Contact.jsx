@@ -8,11 +8,11 @@ const Contact = () => {
           <div className="flex justify-center">
             <div className="text-center md:max-w-xl lg:max-w-3xl mb-12 ">
               <div className="flex justify-center items-center  pb-8 ">
-                <div className="border-t-2 border-blue-700  w-[40px]"></div>
+                <div className="border-t-2 border-brand  w-[40px]"></div>
                 <h2 className="px-2 text-4xl font-semibold poppins-bold text-brand text-nowrap ">
                   Contact us
                 </h2>
-                <div className="border-t-2 border-blue-700  w-[40px]"></div>
+                <div className="border-t-2 border-brand  w-[40px]"></div>
               </div>
 
               <p className="text-base poppins-regular">
@@ -25,7 +25,7 @@ const Contact = () => {
             <form className="mb-12 w-full  shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
               <div className="mb-3 w-full poppins-regular">
                 <label
-                  className="block font-medium mb-[2px] poppins-regular text-blue-700"
+                  className="block font-medium mb-[2px] poppins-regular text-brand"
                   htmlfor="exampleInput90"
                 >
                   Name
@@ -39,7 +39,7 @@ const Contact = () => {
               </div>
               <div className="mb-3 w-full">
                 <label
-                  className="block font-medium mb-[2px] poppins-regular text-blue-700"
+                  className="block font-medium mb-[2px] poppins-regular text-brand"
                   htmlfor="exampleInput90"
                 >
                   Email
@@ -53,7 +53,7 @@ const Contact = () => {
               </div>
               <div className="mb-3 w-full">
                 <label
-                  className="block poppins-regular font-medium mb-[2px] text-blue-700"
+                  className="block poppins-regular font-medium mb-[2px] text-brand"
                   htmlfor="exampleInput90"
                 >
                   Message
@@ -67,7 +67,7 @@ const Contact = () => {
               </div>
               <button
                 type="button"
-                className="mb-6 inline-block poppins-regular w-full rounded bg-blue-900 px-6 py-2.5 font-medium uppercase leading-normal text-white hover:shadow-md hover:bg-blue-800"
+                className="mb-6 inline-block poppins-regular w-full rounded bg-brand  px-6 py-2.5 font-medium uppercase leading-normal text-white hover:shadow-md hover:bg-blue-800"
               >
                 Send
               </button>
@@ -77,7 +77,7 @@ const Contact = () => {
                 <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                   <div className="flex items-start">
                     <div className="shrink-0">
-                      <div className="inline-block rounded-md bg-teal-400-100 p-4 text-blue-700">
+                      <div className="inline-block rounded-md bg-teal-400-100 p-4 text-brand">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -104,7 +104,7 @@ const Contact = () => {
                 <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                   <div className="flex items-start">
                     <div className="shrink-0">
-                      <div className="inline-block rounded-md bg-teal-400-100 p-4 text-blue-700">
+                      <div className="inline-block rounded-md bg-teal-400-100 p-4 text-brand">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -131,7 +131,7 @@ const Contact = () => {
                 <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                   <div className="align-start flex">
                     <div className="shrink-0">
-                      <div className="inline-block rounded-md bg-teal-400-100 p-4 text-blue-700">
+                      <div className="inline-block rounded-md bg-teal-400-100 p-4 text-brand">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -158,7 +158,7 @@ const Contact = () => {
                 <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                   <div className="align-start flex">
                     <div className="shrink-0">
-                      <div className="inline-block rounded-md bg-teal-400-100 p-4 text-blue-700">
+                      <div className="inline-block rounded-md bg-teal-400-100 p-4 text-brand">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"

@@ -17,8 +17,9 @@ const Home = () => {
       <Services />
       <Pricing />
       <VideoCard />
-      <Contact />
+      
       <Blog />
+      <Contact />
     </>
   );
 };
