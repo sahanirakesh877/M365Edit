@@ -5,21 +5,19 @@ const Banner = () => {
     <>
       <section className="bg-white  dark:bg-gray-900 overflow-hidden">
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-32 lg:px-12">
-          <p className="text-center text-xl lg:pb-3 subhead">
-            Tired of struggling with outdated processes and inefficiencies?{" "}
+          <p className="text-center text-xl lg:pb-3 poppins-medium-italic">
+          Unlock Peace of Mind: Affordable Cyber Security for Your  Business{" "}
           </p>
-          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white ">
-            We invest in the world’s potential
+          <h1 className="mb-4 text-4xl poppins-semibold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl dark:text-white ">
+          We Secure and Manage Microsoft 365 Environment for Small to Medium Businesses
           </h1>
-          <p className="mb-8 text-lg font-normal text-gray-600 lg:text-xl sm:px-16 xl:px-42 dark:text-gray-400">
-            Unlock the full potential of your business with our comprehensive
-            M365 services! <br /> Elevate productivity, collaboration, and
-            security seamlessly.
+          <p className="mb-8 text-lg poppins-medium text-gray-600 lg:text-xl sm:px-16 xl:px-42 dark:text-gray-400">
+          Discover how M365 can boost your small to medium business with our customized solutions, support, and advice.
           </p>
           <div className="flex flex-col mb-8 lg:mb-20 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
             <a
               href="#"
-              className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+              className="inline-flex justify-center poppins-regular items-center py-3 px-5 text-base font-semibold text-center text-white rounded-lg bg-brand hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
             >
               Book 30 Min Free Consultation
               <svg

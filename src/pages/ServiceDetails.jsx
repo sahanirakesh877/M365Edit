@@ -1,14 +1,36 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
+import React from "react";
+import { useParams } from "react-router-dom";
+import serviceData from "../Data/ServiceData";
 
 const ServiceDetails = () => {
-    const {id}=useParams();
-    console.log(id)
-  return (
-    <>
-      
-    </>
-  )
-}
+  const { id } = useParams();
+  const selectedData = serviceData.find((data) => data.id === id);
 
-export default ServiceDetails
+  return (
+    <div className="container mx-auto px-8 pb-4">
+      <div className="max-w-6xl mx-auto py-4">
+        <h1 className="text-center  text-3xl font-semibold poppins-bold border-b-2 py-3">{selectedData.title} Service</h1>
+        <p className="text-center pb-8 text-md poppins-regular py-6">{selectedData.paragrap}</p>
+        <div>
+          {selectedData.subheading.map((subtitles, index) => (
+            <div key={index} className="mb-8">
+              <h2 className="text-center font-bold text-2xl py-6 text-brand  poppins-semibold">{subtitles.title}</h2>
+              <ul className="list-disc">
+                {subtitles.sub_titles.map((list, index) => (
+                  <li key={index} className="font-bold text-xl py-1 poppins-regular">
+                    <strong className="poppins-bold">{list.sub_title}</strong>:{" "}
+                    <span className="font-normal text-md poppins-regular">{list.text}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+       <p className="pb-6 italic  text-[18px] ">{selectedData.note}</p>
+        <p className="text-md poppins-regular">{selectedData.conclusion}</p>
+      </div>
+    </div>
+  );
+};
+
+export default ServiceDetails;

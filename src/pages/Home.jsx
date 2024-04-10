@@ -6,15 +6,17 @@ import Services from "./Services";
 import Blog from "./Blog";
 import Review from "../components/Review";
 import Contact from "../pages/Contact";
+import MeetProfessional from "../components/MeetProfessional";
 
 const Home = () => {
   return (
     <>
       <Banner />
       <Review />
-      <VideoCard />
+      <MeetProfessional/>
       <Services />
       <Pricing />
+      <VideoCard />
       <Contact />
       <Blog />
     </>

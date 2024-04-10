@@ -4,17 +4,17 @@ import Blogdata from "../Data/BlogData";
 const Blog = () => {
   return (
     <>
-      <div className="flex justify-center items-center flex-col container mx-auto  py-10">
+      <div className="flex justify-center items-center flex-col container mx-auto  py-8">
         <div className="flex items-center mb-4">
           <div className="flex-grow">
-            <hr className="border-t-2 border-red-700 w-[40px] mx-4" />
+            <hr className="border-t-2 border-blue-700 w-[40px] mx-4" />
           </div>
-          <p className="text-4xl text-blue-700  ">Blogs</p>
+          <p className="text-4xl text-brand   poppins-semibold">Blogs</p>
           <div className="flex-grow">
-            <hr className="border-t-2 border-red-700 w-[40px] mx-4" />
+            <hr className="border-t-2 border-blue-700 w-[40px] mx-4" />
           </div>
         </div>
-        <p className="text-base text-center text-gray-500 mx-6 ">
+        <p className="text-base text-center text-gray-500 mx-6 poppins-regular">
           Discover the latest trends in technology and innovation. From
           insightful industry analyses to practical guides, our blog is your
           go-to source for staying informed and inspired. Join our community and
@@ -33,7 +33,7 @@ const Blog = () => {
               className="mb-0 overflow-hidden text-center bg-white rounded shadow dark:bg-gray-700"
               href="#" key={id}
             >
-              <div className="relative overflow-hidden h-60   ">
+              <div className="relative overflow-hidden h-40   ">
                 <img
                   className="object-cover w-full h-full transition-all hover:scale-110"
                   src={a.img}
@@ -42,18 +42,18 @@ const Blog = () => {
               </div>
               <div className="relative z-20 p-8 -mt-16 ">
                 <img
-                  className="object-cover w-20 h-20 mx-auto mb-1 border-4 border-white rounded-full dark:border-gray-500"
+                  className="object-cover poppins-regular w-20 h-20 mx-auto mb-1 border-4 border-white rounded-full dark:border-gray-500"
                   src={a.clientImg}
                   alt
                 />
-                <span className="block mb-1 text-xs font-semibold text-blue-700 uppercase dark:text-blue-300">
+                <span className="block mb-1 text-xs poppins-regular font-semibold text-blue-700 uppercase dark:text-blue-300">
                {a.name}
                 </span>
-                <h2 className=" text-2xl font-bold leading-7 text-blue-800 dark:text-white">
+                <h2 className=" text-2xl poppins-regular font-bold leading-7 text-blue-800 dark:text-white">
                   {a.title}
                 </h2>
-                <p className="text-base leading-7 text-gray-400">
-                 {a.description}
+                <p className="text-base poppins-regular leading-7 text-gray-400">
+                 {a.description.slice(0,40)}
                 </p>
               </div>
             </a>

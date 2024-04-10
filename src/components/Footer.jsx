@@ -3,11 +3,11 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="pt-8">
+      <footer className="pt-8 ">
         <div className="bg-[#0C2D57] py-8 border-t-2">
           <div className="max-w-screen-lg px-4 sm:px-6 text-gray-400 sm:grid md:grid-cols-4 sm:grid-cols-2 mx-auto">
             <div className="p-5 flex justify-center items-center flex-col">
-            <h3 className="font-bold text-2xl  text-white">M365 Pros.</h3>
+            <h3 className="font-bold text-2xl  text-white poppins-bold">M365 Pros.</h3>
 
               <div className="w-[100px] h-[]">
               <img
@@ -17,45 +17,45 @@ const Footer = () => {
               />
               </div>
             </div>
-            <div className="p-5">
-              <div className="text-sm uppercase text-white font-bold">
+            <div className="p-5 ">
+              <div className="text-sm uppercase text-white font-bold poppins-regular">
                 Resources
               </div>
-              <a className="my-3 block" href="/#">
+              <a className="my-3 block poppins-regular" href="/#">
                 Documentation <span className="text-teal-600 text-xs p-1" />
               </a>
-              <a className="my-3 block" href="/#">
+              <a className="my-3 block  poppins-regular" href="/#">
                 Tutorials <span className="text-teal-600 text-xs p-1" />
               </a>
-              <a className="my-3 block" href="/#">
-                Support <span className="text-gray-400 text-xs p-1">New</span>
+              <a className="my-3 block poppins-regular" href="/#">
+                Support <span className="text-gray-400 text-xs p-1 poppins-regular">New</span>
               </a>
             </div>
             <div className="p-5">
-              <div className="text-sm uppercase text-white font-bold">
+              <div className="text-sm uppercase text-white font-bold poppins-regular">
                 Support
               </div>
-              <a className="my-3 block" href="/#">
+              <a className="my-3 block poppins-regular" href="/#">
                 Help Center <span className="text-teal-600 text-xs p-1" />
               </a>
-              <a className="my-3 block" href="/#">
+              <a className="my-3 block poppins-regular" href="/#">
                 Privacy Policy <span className="text-teal-600 text-xs p-1" />
               </a>
-              <a className="my-3 block" href="/#">
+              <a className="my-3 block poppins-regular" href="/#">
                 Conditions <span className="text-teal-600 text-xs p-1" />
               </a>
             </div>
             <div className="p-5">
-              <div className="text-sm uppercase text-white font-bold">
+              <div className="text-sm uppercase text-white font-bold poppins-regular">
                 Contact us
               </div>
-              <a className="my-3 block" href="/#">
+              <a className="my-3 block poppins-regular" href="/#">
                 XXX XXXX, Floor 4 San Kathmandu, Thimi
                 <span className="text-teal-600 text-xs p-1" />
               </a>
-              <a className="my-3 block" href="/#">
+              <a className="my-3 block poppins-regular" href="/#">
                 contact@company.com
-                <span className="text-teal-600 text-xs p-1" />
+                <span className="text-teal-600 text-xs p-1 poppins-regular" />
               </a>
             </div>
           </div>
@@ -239,7 +239,7 @@ max-w-screen-lg items-center"
                 </svg>
               </a>
             </div>
-            <div className="my-5">© Copyright 2024. All Rights Reserved.</div>
+            <div className="my-5 poppins-regular">© Copyright 2024. All Rights Reserved.</div>
           </div>
         </div>
       </footer>

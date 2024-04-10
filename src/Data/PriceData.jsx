@@ -1,49 +1,34 @@
-const pricedata=[
-    {
-        'id':'1',
-        'header':"STARTER",
-        "title":"Starter",
-        'paragraph':"For the individual and small teams",
-        "price":"$30",
-        "date":"/month",
-        "list1":"Trending Dashboard",
-        "list2":"25 Keywords",
-        "list3":"250 Accounts Tracking",
-        "list4":"10 Users",
-        "list5":"Early Beta Features ",
-        "list6":"Premium Support",
-
-    },
-    {
-        'id':'2',
-        'header':"POPULAR",
-        "title":"Pro",
-        'paragraph':"For agencies and businesses",
-        "price":"$50",
-        "date":"/month",
-        "list1":"Trending Dashboard",
-        "list2":"25 Keywords",
-        "list3":"250 Accounts Tracking",
-        "list4":"10 Users",
-        "list5":"Early Beta Features ",
-        "list6":"Premium Support",
-
-    },
-    {
-        'id':'3',
-        'header':"PREMIUM",
-        "title":"Premium",
-        'paragraph':"For agencies and businesses",
-        "price":"$79",
-        "date":"/month",
-        "list1":"Trending Dashboard",
-        "list2":"25 Keywords",
-        "list3":"250 Accounts Tracking",
-        "list4":"10 Users",
-        "list5":"Early Beta Features ",
-        "list6":"Premium Support",
-        
-
-    },
-]
-export default pricedata
+const pricedata = [
+  {
+    id: "1",
+    header: "SILVER",
+    paragraph: "For the individual and small teams",
+    price: " $99 ",
+    date: "per user / month",
+    list1: "Exchange Online Email",
+    list2: "Onedrive	",
+    list3: "Best for Collaboration",
+    list4: "Onboarding fee – Starts from $500 ",
+  },
+  {
+    id: "2",
+    header: "GOLD",
+    paragraph: "For agencies and businesses",
+    price: " $149",
+    date: "per user / month",
+    list1: "Silver plus",
+    list2: "Productivity apps focus",
+    list3: "Starts from $1500 ",
+  },
+  {
+    id: "3",
+    header: "PLATINUM",
+    paragraph: "For large scale of  businesses",
+    price: "$199 ",
+    date: "per user / month",
+    list1: "Security Focused ",
+    list2: "MDM",
+    list3: "Starts from $5000 ",
+  },
+];
+export default pricedata;

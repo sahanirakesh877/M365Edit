@@ -3,63 +3,63 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <div className="container pb-24 pt-16 mx-auto px-2 md:px-4 ">
+      <div className="container pb-24 pt-16 mx-auto px-4 md:px-4 ">
         <section className="">
           <div className="flex justify-center">
             <div className="text-center md:max-w-xl lg:max-w-3xl mb-12 ">
               <div className="flex justify-center items-center  pb-8 ">
-                <div className="border-t-2 border-red-700  w-[40px]"></div>
-                <h2 className="px-2 text-4xl font-semibold text-blue-700 text-nowrap ">
+                <div className="border-t-2 border-blue-700  w-[40px]"></div>
+                <h2 className="px-2 text-4xl font-semibold poppins-bold text-brand text-nowrap ">
                   Contact us
                 </h2>
-                <div className="border-t-2 border-red-700  w-[40px]"></div>
+                <div className="border-t-2 border-blue-700  w-[40px]"></div>
               </div>
 
-              <p className="text-base">
+              <p className="text-base poppins-regular">
                 We are always available to support you.Feel free to call us and
                 get details
               </p>
             </div>
           </div>
-          <div className="flex flex-wrap">
-            <form className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
-              <div className="mb-3 w-full">
+          <div className="flex flex-wrap items-center  ">
+            <form className="mb-12 w-full  shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+              <div className="mb-3 w-full poppins-regular">
                 <label
-                  className="block font-medium mb-[2px] text-blue-700"
+                  className="block font-medium mb-[2px] poppins-regular text-blue-700"
                   htmlfor="exampleInput90"
                 >
                   Name
                 </label>
                 <input
                   type="text"
-                  className="px-2 py-2 border w-full outline-none rounded-md"
+                  className="px-2 py-2 border w-full  outline-none rounded-md"
                   id="exampleInput90"
                   placeholder="Name"
                 />
               </div>
               <div className="mb-3 w-full">
                 <label
-                  className="block font-medium mb-[2px] text-blue-700"
+                  className="block font-medium mb-[2px] poppins-regular text-blue-700"
                   htmlfor="exampleInput90"
                 >
                   Email
                 </label>
                 <input
                   type="email"
-                  className="px-2 py-2 border w-full outline-none rounded-md"
+                  className="px-2 py-2 border w-full poppins-regular outline-none rounded-md"
                   id="exampleInput90"
                   placeholder="Enter your email address"
                 />
               </div>
               <div className="mb-3 w-full">
                 <label
-                  className="block font-medium mb-[2px] text-blue-700"
+                  className="block poppins-regular font-medium mb-[2px] text-blue-700"
                   htmlfor="exampleInput90"
                 >
                   Message
                 </label>
                 <textarea
-                  className="px-2 py-2 border rounded-[5px] w-full outline-none"
+                  className="px-2 py-2 border poppins-regular rounded-[5px] w-full outline-none"
                   name
                   id
                   defaultValue={""}
@@ -67,7 +67,7 @@ const Contact = () => {
               </div>
               <button
                 type="button"
-                className="mb-6 inline-block w-full rounded bg-blue-900 px-6 py-2.5 font-medium uppercase leading-normal text-white hover:shadow-md hover:bg-blue-800"
+                className="mb-6 inline-block poppins-regular w-full rounded bg-blue-900 px-6 py-2.5 font-medium uppercase leading-normal text-white hover:shadow-md hover:bg-blue-800"
               >
                 Send
               </button>
@@ -94,10 +94,10 @@ const Contact = () => {
                         </svg>
                       </div>
                     </div>
-                    <div className="ml-6 grow">
-                      <p className="mb-2 font-bold">Technical support</p>
-                      <p className="text-neutral-500 ">support@example.com</p>
-                      <p className="text-neutral-500 ">+1 234-567-89</p>
+                    <div className="ml-6 grow ">
+                      <p className="mb-2 font-bold poppins-regular">Technical support</p>
+                      <p className="text-neutral-500 poppins-regular">support@example.com</p>
+                      <p className="text-neutral-500 poppins-regular">+1 234-567-89</p>
                     </div>
                   </div>
                 </div>
@@ -122,9 +122,9 @@ const Contact = () => {
                       </div>
                     </div>
                     <div className="ml-6 grow">
-                      <p className="mb-2 font-bold ">Sales questions</p>
-                      <p className="text-neutral-500 ">sales@example.com</p>
-                      <p className="text-neutral-500 ">+1 234-567-89</p>
+                      <p className="mb-2 font-bold poppins-regular">Sales questions</p>
+                      <p className="text-neutral-500 poppins-regular">sales@example.com</p>
+                      <p className="text-neutral-500 poppins-regular">+1 234-567-89</p>
                     </div>
                   </div>
                 </div>
@@ -149,9 +149,9 @@ const Contact = () => {
                       </div>
                     </div>
                     <div className="ml-6 grow">
-                      <p className="mb-2 font-bold ">Press</p>
-                      <p className="text-neutral-500 ">press@example.com</p>
-                      <p className="text-neutral-500 ">+1 234-567-89</p>
+                      <p className="mb-2 font-bold poppins-regular">Press</p>
+                      <p className="text-neutral-500 poppins-regular">press@example.com</p>
+                      <p className="text-neutral-500 poppins-regular">+1 234-567-89</p>
                     </div>
                   </div>
                 </div>
@@ -176,9 +176,9 @@ const Contact = () => {
                       </div>
                     </div>
                     <div className="ml-6 grow">
-                      <p className="mb-2 font-bold">Bug report</p>
-                      <p className="text-neutral-500 ">bugs@example.com</p>
-                      <p className="text-neutral-500">+1 234-567-89</p>
+                      <p className="mb-2 font-bold poppins-regular">Bug report</p>
+                      <p className="text-neutral-500 poppins-regular">bugs@example.com</p>
+                      <p className="text-neutral-500  poppins-regular">+1 234-567-89</p>
                     </div>
                   </div>
                 </div>

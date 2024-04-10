@@ -3,7 +3,7 @@ import React from 'react'
 const TopSection = () => {
   return (
     <>
-      <p className='text-center   bg-[#0C2D57] lg:text-base font-bold text-white lg:py-2.5 sm:text-center sm:text-sm sm:py-4 '>Limited Time: Save BIG With the 'M365' Plan</p>
+      <p className='  bg-brand lg:text-base font-bold text-white lg:py-2.5 text-center text-sm py-2 poppins-regular px-1'>Limited Time: Save BIG With the 'M365' Plan</p>
       
     </>
   )
