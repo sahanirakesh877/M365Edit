@@ -21,11 +21,12 @@ const Pricing = () => {
             unlock long-term{" "}
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 px-8   container mx-auto text-zinc-800 mt-10">
+        <div className="grid grid-cols-1  gap-6 sm:grid-cols-2 lg:grid-cols-3 px-8   container mx-auto text-zinc-800 mt-10">
           {pricedata.map((a, id) => {
             return (
               <>
-                <div className="flex flex-col pb-8 items-center servicecss  rounded-lg shadow-lg relative  border-blue-900 max-w-sm">
+                <div className="flex flex-col pb-8 items-center  bg-gray-100
+                 rounded-lg shadow-xl relative border border-blue-900 max-w-sm">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -142,3 +143,5 @@ const Pricing = () => {
 };
 
 export default Pricing;
+
+
