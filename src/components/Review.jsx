@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Review = () => {
   const [showMore, setShowMore] = useState(false);
@@ -6,6 +6,9 @@ const Review = () => {
   const toggleShowMore = () => {
     setShowMore(!showMore);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <>

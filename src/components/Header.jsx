@@ -1,50 +1,84 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [loco, setLocation] = useState("/");
-  const navs = document.querySelectorAll(".navs");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  console.log(navs);
-
-  useEffect(() => {
+  const handleLinkClick = () => {
+    setIsMobileMenuOpen(false);
     window.scrollTo(0, 0);
-  }, [location.pathname]);
+  };
 
-  console.log(loco);
   return (
     <>
       <header>
-        <nav className=" border-gray-200 px-4 lg:px-6 py-2 dark:bg-gray-800  border-b shadow-lg ">
+        <nav className="border-gray-200 px-4 lg:px-6 py-2 dark:bg-gray-800 border-b shadow-lg">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <Link to={"/"} className="flex items-center">
               <img
                 src="/m365Logos.jpg"
-                className="mr-3 lg:h-16  w-full h-12"
+                className="mr-3 lg:h-16 w-full h-12"
                 alt="m365 Logo"
               />
-             
             </Link>
+
+            <ul className="flex flex-col mt-4 text-xl lg:flex-row lg:space-x-8 lg:mt-0">
+              <li>
+                <Link
+                  to={"/"}
+                  onClick={handleLinkClick}
+                  className="hidden  lg:block  py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 poppins-regular"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={"/service"}
+                  onClick={handleLinkClick}
+                  className="hidden lg:block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 poppins-regular"
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={"/blog"}
+                  onClick={handleLinkClick}
+                  className="hidden lg:block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 poppins-regular"
+                >
+                  Blogs
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to={"/pricing"}
+                  onClick={handleLinkClick}
+                  className="hidden lg:block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 poppins-regular"
+                >
+                  Pricing
+                </Link>
+              </li>
+            </ul>
             <div className="flex items-center lg:order-2">
               <Link
                 to={"/contact"}
-                onCli
-                className="text-white bookbtn bg-brand  rounded-full hover:bg-blue-900     poppins-bold text-md px-4 lg:px-5 py-2 lg:py-2.5 mr-2   "
+                className="text-white bookbtn bg-brand rounded-full hover:bg-blue-900 poppins-bold text-md px-4 lg:px-5 py-2 lg:py-2.5 mr-2"
               >
                 Book a Call
               </Link>
               <button
-                data-collapse-toggle="mobile-menu-2"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 type="button"
-                className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2  "
+                className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2"
                 aria-controls="mobile-menu-2"
-                aria-expanded="false"
+                aria-expanded={isMobileMenuOpen ? "true" : "false"}
               >
                 <span className="sr-only">Open main menu</span>
                 <svg
-                  className="w-6 h-6"
+                  className={`w-6 h-6 ${isMobileMenuOpen ? "hidden" : ""}`}
                   fill="currentColor"
-                  color="bg-[#0C2D57]"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -55,7 +89,7 @@ const Header = () => {
                   />
                 </svg>
                 <svg
-                  className="hidden w-6 h-6"
+                  className={`w-6 h-6 ${isMobileMenuOpen ? "" : "hidden"}`}
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -68,58 +102,60 @@ const Header = () => {
                 </svg>
               </button>
             </div>
-            <div
-              className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
-              id="mobile-menu-2"
-            >
-              <ul className="flex flex-col mt-4  text-xl lg:flex-row lg:space-x-8 lg:mt-0">
-                <li className="navs">
-                  <Link
-                    to={"/"}
-                    className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0   poppins-regular"
-                    onClick={() => setLocation("home")}
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li className="navs">
-                  <Link
-                    to={"/service"}
-                    className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0  poppins-regular"
-                    onClick={() => setLocation("service")}
-                  >
-                    Services
-                  </Link>
-                </li>
-                <li className="navs">
-                  <Link
-                    to={"/blog"}
-                    className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0  poppins-regular"
-                    onClick={() => setLocation("blog")}
-                  >
-                    Blogs
-                  </Link>
-                </li>
+          </div>
+          <div
+            className={`lg:hidden justify-between items-center w-full`}
+            id="mobile-menu-2"
+            style={{ display: isMobileMenuOpen ? "block" : "none" }}
+          >
+            <ul className="flex flex-col mt-4 text-xl lg:flex-row lg:space-x-8 lg:mt-0">
+              <li>
+                <Link
+                  to={"/"}
+                  onClick={handleLinkClick}
+                  className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 poppins-regular"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={"/service"}
+                  onClick={handleLinkClick}
+                  className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 poppins-regular"
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={"/blog"}
+                  onClick={handleLinkClick}
+                  className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 poppins-regular"
+                >
+                  Blogs
+                </Link>
+              </li>
 
-                <li className="navs">
-                  <Link
-                    to={"/pricing"}
-                    className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0  poppins-regular"
-                    onClick={() => setLocation("pricing")}
-                  >
-                    Pricing
-                  </Link>
-                </li>
-                <li className="my-3">
-                  <Link
-                    to={"/book"}
-                    className="text-white bg-brand lg:hidden hover:bg-primary-800 focus:ring-4  poppind-semibold rounded-lg text-md px-4 lg:px-5 py-2  lg:py-2.5 mr-2 "
-                  >
-                    Book a Call
-                  </Link>
-                </li>
-              </ul>
-            </div>
+              <li>
+                <Link
+                  to={"/pricing"}
+                  onClick={handleLinkClick}
+                  className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 poppins-regular"
+                >
+                  Pricing
+                </Link>
+              </li>
+              <li className="my-3">
+                <Link
+                  to={"/book"}
+                  onClick={handleLinkClick}
+                  className="text-white bg-brand hover:bg-primary-800 focus:ring-4 poppind-semibold rounded-lg text-md px-4 lg:px-5 py-2 lg:py-2.5 mr-2"
+                >
+                  Book a Call
+                </Link>
+              </li>
+            </ul>
           </div>
         </nav>
       </header>

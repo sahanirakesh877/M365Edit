@@ -5,52 +5,41 @@ import { Link } from "react-router-dom";
 const Services = () => {
   return (
     <>
-      <div className="servicecss">
-        <div className="max-w-7xl  px-5 py-24 container mx-auto">
-          <div className="text-center">
-            <h2 className="font-semibold  text-4xl  poppins-semibold text-brand ">
-              Service We Provide
-            </h2>
-            <p className=" max-w-lg mx-auto my-4 text-gray-500 poppins-regular">
-              . Microsoft 365, formerly known as Office 365, is a suite of
-              cloud-based productivity tools and services offered by Microsoft.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-10  mt-10 ">
+     
+      <div className=" servicecss px-4 lg:pt-12 lg:pb-24 py-4">
+        <div id="features" className="mx-auto max-w-6xl">
+          <h2 className="font-semibold  text-center text-4xl  poppins-semibold text-brand ">
+            Our Services
+          </h2>
+          <p className=" text-center mx-auto my-2 text-gray-700 poppins-regular">
+            Microsoft 365, formerly known as Office 365, is a suite of
+            cloud-based productivity tools and services offered by Microsoft.
+          </p>
+          <ul className="mt-12 grid grid-cols-1 gap-6 text-center text-slate-800 md:grid-cols-2">
             {servicedata.map((a, id) => {
               return (
                 <>
-                  <Link to={`/service/${a.id}`}>
-                    <div
-                      className="flex gap-4 items-start border border-brand   p-4 relative"
-                      key={id}
-                    >
-                      <span className=" bg-violet-500/10 p-4 rounded-full">
-                        <img
-                          src={a.image}
-                          alt="word logo"
-                          class="w-24 h-auto rounded-full"
-                        />
-                      </span>
-                      <div>
-                        <h3 className="font-semibold text-xl poppins-semibold text-justify">
-                          {a.title}
-                        </h3>
-                        <p className="mt-1 text-gray-500 poppins-regular text-justify">
-                          {" "}
-                          {a.paragrap.slice(0, 70)} . .
-                        </p>
-                        <div class="absolute -top-0.5 left-0  w-10 border border-red-700"></div>
-                        <div class="absolute -bottom-0.5 right-0  w-10 border border-red-700"></div>
-
-                      </div>
-                    </div>
-                  </Link>
+                  <li className="  px-8 py-8  servicecss   shadow-lg">
+                    <Link to={`/service/${a.id}`}>
+                      <img
+                        src={a.image}
+                        alt
+                        className="mx-auto h-10 w-10 mb-6"
+                      />
+                      <h3 className="font-semibold text-xl poppins-semibold text-center pb-2">
+                        {a.title}
+                      </h3>
+                      <p className="mt-1 text-gray-500 poppins-regular text-justify">
+                        {a.paragrap.slice(0, 100)} . . . . . . . .
+                      </p>
+                    </Link>
+                  </li>
                 </>
               );
             })}
-          </div>
+          </ul>
         </div>
+        <div />
       </div>
     </>
   );

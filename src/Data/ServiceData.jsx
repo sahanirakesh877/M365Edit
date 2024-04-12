@@ -225,7 +225,59 @@ const servicedata = [
 
   {
     id: "5",
-    title: "5.	Microsoft 365 Copilot Onboarding  ",
+    title: "Microsoft 365 Copilot Onboarding  ",
+    paragrap:
+      "At M365 Pros, we offer comprehensive onboarding services for Microsoft 365 Copilot.",
+
+    subheading: [
+      {
+        title: "Why Choose Our Onboarding Services?",
+        sub_titles: [
+          {
+            sub_title: "Smooth Transition",
+            text: "We ensure a seamless transition to Microsoft 365 Copilot, minimizing disruption to your business operations.",
+          },
+          {
+            sub_title: "2.	Expert Guidance",
+            text: "Our team of experts will guide you through the entire onboarding process, providing clear instructions and support every step of the way",
+          },
+          {
+            sub_title: "Post-Onboarding Support",
+            text: ": After the onboarding process, we provide ongoing support to ensure you can effectively use Microsoft 365 Copilot.",
+          },
+        ],
+      },
+      {
+        title: "Our Onboarding Process",
+        sub_titles: [
+          {
+            sub_title: "Pre-Onboarding Consultation",
+
+            text: "We conduct a thorough consultation to understand your business needs and how Microsoft 365 Copilot can best meet those needs.",
+          },
+          {
+            sub_title: "Onboarding",
+            text: "We guide you through the entire onboarding process, ensuring all necessary configurations are correctly set up",
+          },
+          {
+            sub_title: "	Post-Onboarding Support",
+            text: "After the onboarding, we provide support to ensure that your team can effectively use Microsoft 365 Copilot.",
+          },
+        ],
+      },
+    ],
+
+    image:
+      "https://w7.pngwing.com/pngs/344/883/png-transparent-laptop-microsoft-onenote-computer-software-microsoft-office-365-onenote-purple-electronics-violet-thumbnail.png",
+    conclusion:
+      "Our onboarding services start from $500. Enhance your business operations with M365 Pros. Contact us today for more information.",
+    note: "Please note that the prerequisite for this service is to have an M365 Copilot subscription or the customer’s willingness to purchase this subscription.",
+  },
+
+
+  {
+    id: "6",
+    title: "Microsoft 365 Copilot Onboarding  ",
     paragrap:
       "At M365 Pros, we offer comprehensive onboarding services for Microsoft 365 Copilot.",
 

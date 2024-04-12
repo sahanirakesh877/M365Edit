@@ -4,8 +4,8 @@ import Blogdata from "../Data/BlogData";
 const Blog = () => {
   return (
     <>
-    <div className="servicecss py-24">
-      <div className="flex justify-center items-center  flex-col container mx-auto  py-8">
+    <div className="servicecss lg:pt-12 lg:pb-24 py-4">
+      <div className="flex justify-center items-center  flex-col container mx-auto  ">
         <div className="flex items-center mb-4">
           <div className="flex-grow">
             <hr className="border-t-2 border-blue-700 w-[40px] mx-4" />
