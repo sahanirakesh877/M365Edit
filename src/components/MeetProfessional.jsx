@@ -23,11 +23,11 @@ const MeetProfessional = () => {
     <>
       <div className="  px-4 py-24">
         <div id="features" className="mx-auto max-w-6xl">
-          <h2 className="font-semibold  text-center text-4xl  poppins-semibold text-brand ">
+          <h2 className="font-semibold  text-center lg:text-4xl text-3xl px-6  poppins-semibold text-brand ">
             Meet Our Professional
           </h2>
 
-          <ul className="mt-12 grid grid-cols-1 gap-6 text-center text-slate-800 md:grid-cols-2">
+          <ul className="lg:mt-12  mt-8 grid grid-cols-1 gap-6 text-center text-slate-800 md:grid-cols-2">
             {/* left section */}
             <li className="  px-8 py-8    border  shadow-lg">
               <div className="flex flex-1 flex-row items-start justify-between">

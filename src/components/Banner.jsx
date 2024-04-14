@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <>
       <section className="bg-white  dark:bg-gray-900 overflow-hidden">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-32 lg:px-12">
+        <div className="py-8 px-6 mx-auto max-w-screen-xl text-center lg:py-32 lg:px-12">
           <p className="text-center  lg:text-[25px] lg:pb-3 kalam-light  pb-1">
           Unlock Peace of Mind: Affordable Cyber Security for Your  Business{" "}
           </p>

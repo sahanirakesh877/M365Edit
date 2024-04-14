@@ -21,13 +21,13 @@ const Pricing = () => {
               unlock long-term{" "}
             </p>
           </div>
-          <div className="grid grid-cols-1  gap-6 sm:grid-cols-2 lg:grid-cols-3 px-8   container mx-auto text-zinc-800 mt-10">
+          <div className="grid grid-cols-1  gap-6 sm:grid-cols-2 lg:grid-cols-3 px-6   container mx-auto text-zinc-800 mt-10">
             {pricedata.map((a, id) => {
               return (
                 <>
                   <div
-                    className="flex flex-col pb-8 items-center  bg-gray-50
-                 rounded-lg shadow-xl relative border border-blue-900 max-w-sm"
+                    className="flex flex-col pb-8 items-center   bg-gray-50
+                  shadow-xl relative  border border-blue-900 max-w-sm rounded-tl-lg rounded-tr-lg"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -126,18 +126,23 @@ const Pricing = () => {
 
                       <div className="flex justify-center mt-8">
                         <button
-                          className=" px-4 py-2 border-blue-900 border-4 hover:bg-violet-100 rounded-xl poppins-medium"
+                          className="  px-4 py-2 border-blue-900 border-4 hover:bg-violet-100 rounded-xl poppins-medium"
                           onClick={pricecomp}
                         >
                           Get Started
                         </button>
+                        <div className="polygon-clip1"></div>
+                        <div className="polygon-clip2"></div>
                       </div>
                     </div>
                   </div>
+                  
                 </>
               );
             })}
           </div>
+             {/* Polygon Clip */}
+             
         </div>
       </div>
     </>

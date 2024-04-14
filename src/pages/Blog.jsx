@@ -15,7 +15,7 @@ const Blog = () => {
             <hr className="border-t-2 border-blue-700 w-[40px] mx-4" />
           </div>
         </div>
-        <p className="text-base text-center text-gray-500 mx-6 poppins-regular">
+        <p className="text-base text-center pb-4 text-gray-500 mx-6 poppins-regular">
           Discover the latest trends in technology and innovation. From
           insightful industry analyses to practical guides, our blog is your
           go-to source for staying informed and inspired. Join our community and
@@ -25,13 +25,13 @@ const Blog = () => {
 
       <section className="flex items-center container mx-auto  dark:bg-gray-800">
         <div className=" mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 mx-4 gap-4 lg:gap-8 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 mx-4 gap-4 lg:gap-8 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3 px-4">
           {
             Blogdata.map((a,id)=>{
               return(
                 <>
                 <a
-              className="mb-0 overflow-hidden text-center bg-white rounded shadow dark:bg-gray-700"
+              className="mb-0 overflow-hidden text-center bg-white rounded shadow dark:bg-gray-700 "
               href="#" key={id}
             >
               <div className="relative overflow-hidden h-40   ">
@@ -50,10 +50,10 @@ const Blog = () => {
                 <span className="block mb-1 text-xs poppins-regular font-semibold text-blue-700 uppercase dark:text-blue-300">
                {a.name}
                 </span>
-                <h2 className=" text-2xl poppins-regular font-bold leading-7 text-blue-800 dark:text-white">
+                <h2 className=" text-2xl poppins-regular font-bold leading-7 text-blue-700 dark:text-white">
                   {a.title}
                 </h2>
-                <p className="text-base poppins-regular leading-7 text-gray-400">
+                <p className="text-base poppins-regular leading-7 text-gray-500">
                  {a.description.slice(0,40)}
                 </p>
               </div>

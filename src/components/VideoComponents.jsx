@@ -4,12 +4,19 @@ import "react-alice-carousel/lib/alice-carousel.css";
 
 const VideoCard = () => {
   const images = [
-    "/cer.png",
-    "/cert2.png",
-    "/cert3.png",
-    "/cer4.png",
-    "/cer5.png",
-    "/cer6.png",
+    "/upwork1.png",
+    "/upwork2.png",
+    "/upwork3.png",
+    "/upwork4.png",
+    "/upwork5.png",
+    "/upwork6.png",
+    "/upwork7.png",
+    "/upwork8.png",
+    "/upwork10.png",
+    "/upwork11.png",
+    "/upwork12.png",
+    "/upwork13.png",
+   
   ];
 
   const responsive = {
@@ -19,8 +26,8 @@ const VideoCard = () => {
   };
 
   return (
-    <section className="py-20 bg-white">
-      <div className="flex flex-col items-center pb-10">
+    <section className="py-24 bg-white">
+      <div className="flex flex-col items-center ">
         <p className="text-center poppins-semibold text-brand font-semibold text-4xl lg:text-4xl md:text-lg sm:text-lg">
           Customer's Reviews
         </p>
@@ -42,14 +49,16 @@ const VideoCard = () => {
           lazyLoad
         >
           {images.map((image, index) => (
-            <div key={index} className="w-[440px] h-[220px] px-8">
+            <div key={index} className="px-8 clientReview ">
               <img 
                 src={image}
-                className="sliderimg object-fit border "
+                // className="sliderimg object-fit border "
+    
                 alt={`image-${index}`}
                 style={{ width: "100%", height: "auto" }}
               />
             </div>
+            
           ))}
         </AliceCarousel>
       </div>

@@ -8,10 +8,10 @@ const Services = () => {
      
       <div className=" servicecss px-4 lg:pt-12 lg:pb-24 py-4">
         <div id="features" className="mx-auto max-w-6xl">
-          <h2 className="font-semibold  text-center text-4xl  poppins-semibold text-brand ">
+          <h2 className="font-semibold  text-center lg:text-4xl  text-3xl poppins-semibold text-brand ">
             Our Services
           </h2>
-          <p className=" text-center mx-auto my-2 text-gray-700 poppins-regular">
+          <p className=" text-center mx-auto my-4 lg:my-2 text-gray-700 poppins-regular">
             Microsoft 365, formerly known as Office 365, is a suite of
             cloud-based productivity tools and services offered by Microsoft.
           </p>
@@ -19,7 +19,7 @@ const Services = () => {
             {servicedata.map((a, id) => {
               return (
                 <>
-                  <li className="  px-8 py-8  servicecss   shadow-lg">
+                  <li className="  px-6 py-8  servicecss   shadow-lg">
                     <Link to={`/service/${a.id}`}>
                       <img
                         src={a.image}

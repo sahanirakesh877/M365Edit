@@ -7,7 +7,7 @@ const Contact = () => {
         <section className="">
           <div className="flex justify-center">
             <div className="text-center md:max-w-xl lg:max-w-3xl mb-12 ">
-              <div className="flex justify-center items-center  pb-8 ">
+              <div className="flex justify-center items-center  py-8  ">
                 <div className="border-t-2 border-brand  w-[40px]"></div>
                 <h2 className="px-2 text-4xl font-semibold poppins-bold text-brand text-nowrap ">
                   Contact us
@@ -21,7 +21,7 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-wrap items-center  ">
+          <div className="flex flex-wrap items-center  px-6">
             <form className="mb-12 w-full  shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
               <div className="mb-3 w-full poppins-regular">
                 <label
