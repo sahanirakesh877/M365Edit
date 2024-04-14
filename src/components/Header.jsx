@@ -63,7 +63,7 @@ const Header = () => {
             </ul>
             <div className="flex items-center lg:order-2">
               <Link
-                to={"/contact"}
+                to={"/contacts"}
                 className="text-white bookbtn bg-brand rounded-full hover:bg-blue-900 poppins-bold text-md px-4 lg:px-5 py-2 lg:py-2.5 mr-2"
               >
                 Book a Call
@@ -148,7 +148,7 @@ const Header = () => {
               </li>
               <li className="my-3">
                 <Link
-                  to={"/book"}
+                  to={"/contacts"}
                   onClick={handleLinkClick}
                   className="text-white bg-brand hover:bg-primary-800 focus:ring-4 poppind-semibold rounded-lg text-md px-4 lg:px-5 py-2 lg:py-2.5 mr-2"
                 >

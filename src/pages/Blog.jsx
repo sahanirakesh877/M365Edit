@@ -1,9 +1,14 @@
 import React from "react";
 import Blogdata from "../Data/BlogData";
+import { Helmet } from "react-helmet";
 
 const Blog = () => {
   return (
     <>
+     <Helmet>
+        <title>Blogs | m365pros</title>
+        <meta name="description" content="Learn more about our company and team." />
+      </Helmet>
     <div className="servicecss lg:pt-12 lg:pb-24 py-4">
       <div className="flex justify-center items-center  flex-col container mx-auto  ">
         <div className="flex items-center mb-4">

@@ -1,11 +1,16 @@
 import React from "react";
 import servicedata from "../Data/ServiceData";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Services = () => {
   return (
     <>
-     
+    
+    <Helmet>
+        <title>Service | m365pros</title>
+        <meta name="description" content="Description of your website" />
+      </Helmet>
       <div className=" servicecss px-4 lg:pt-12 lg:pb-24 py-4">
         <div id="features" className="mx-auto max-w-6xl">
           <h2 className="font-semibold  text-center lg:text-4xl  text-3xl poppins-semibold text-brand ">

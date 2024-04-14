@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const PricingDetails = () => {
   useEffect(() => {
@@ -6,6 +7,11 @@ const PricingDetails = () => {
   }, [location.pathname]);
   return (
     <>
+      <Helmet>
+        <title>Price Comparision table | m365pros</title>
+        <meta name="description" content="Price Comaprision tabke on" />
+
+      </Helmet>
       <section className="text-gray-700 body-font overflow-hidden border-t border-gray-200 container mx-auto">
         <div className="flex flex-col justify-center items-center px-4 flex-wrap">
           <h2 className="text-4xl  text-brand pt-6 text-center poppins-bold">

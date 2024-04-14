@@ -7,17 +7,21 @@ import Blog from "./Blog";
 import Review from "../components/Review";
 import Contact from "../pages/Contact";
 import MeetProfessional from "../components/MeetProfessional";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <title>m365pros</title>
+        <meta name="description" content="Description of your website" />
+      </Helmet>
       <Banner />
       <Review />
-      <MeetProfessional/>
+      <MeetProfessional />
       <Services />
       <Pricing />
       <VideoCard />
-      
       <Blog />
       <Contact />
     </>

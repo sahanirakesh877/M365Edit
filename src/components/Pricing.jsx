@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import pricedata from "../Data/PriceData";
+import { Helmet } from "react-helmet";
 const Pricing = () => {
   const navigate = useNavigate();
 
@@ -9,6 +10,10 @@ const Pricing = () => {
   };
   return (
     <>
+     <Helmet>
+        <title>Pricing | m365pros</title>
+        <meta name="description" content="Learn more about our company and team." />
+      </Helmet>
       <div className=" lg:pt-12 lg:pb-24 py-4">
         <div className="container mx-auto ">
           <div className="flex justify-center items-center flex-col  space-x-4 overflow-hidden">

@@ -1,8 +1,14 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <>
+      <Helmet>
+        <title>Contact Us | m365pros</title>
+        <meta name="description" content="Contact us on" />
+
+      </Helmet>
       <div className="container lg:pt-12 lg:pb-24 mx-auto px-4 md:px-4 ">
         <section className="">
           <div className="flex justify-center">
@@ -95,9 +101,15 @@ const Contact = () => {
                       </div>
                     </div>
                     <div className="ml-6 grow ">
-                      <p className="mb-2 font-bold poppins-regular">Technical support</p>
-                      <p className="text-neutral-500 poppins-regular">support@example.com</p>
-                      <p className="text-neutral-500 poppins-regular">+1 234-567-89</p>
+                      <p className="mb-2 font-bold poppins-regular">
+                        Technical support
+                      </p>
+                      <p className="text-neutral-500 poppins-regular">
+                        support@example.com
+                      </p>
+                      <p className="text-neutral-500 poppins-regular">
+                        +1 234-567-89
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -122,9 +134,15 @@ const Contact = () => {
                       </div>
                     </div>
                     <div className="ml-6 grow">
-                      <p className="mb-2 font-bold poppins-regular">Sales questions</p>
-                      <p className="text-neutral-500 poppins-regular">sales@example.com</p>
-                      <p className="text-neutral-500 poppins-regular">+1 234-567-89</p>
+                      <p className="mb-2 font-bold poppins-regular">
+                        Sales questions
+                      </p>
+                      <p className="text-neutral-500 poppins-regular">
+                        sales@example.com
+                      </p>
+                      <p className="text-neutral-500 poppins-regular">
+                        +1 234-567-89
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -150,8 +168,12 @@ const Contact = () => {
                     </div>
                     <div className="ml-6 grow">
                       <p className="mb-2 font-bold poppins-regular">Press</p>
-                      <p className="text-neutral-500 poppins-regular">press@example.com</p>
-                      <p className="text-neutral-500 poppins-regular">+1 234-567-89</p>
+                      <p className="text-neutral-500 poppins-regular">
+                        press@example.com
+                      </p>
+                      <p className="text-neutral-500 poppins-regular">
+                        +1 234-567-89
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -176,9 +198,15 @@ const Contact = () => {
                       </div>
                     </div>
                     <div className="ml-6 grow">
-                      <p className="mb-2 font-bold poppins-regular">Bug report</p>
-                      <p className="text-neutral-500 poppins-regular">bugs@example.com</p>
-                      <p className="text-neutral-500  poppins-regular">+1 234-567-89</p>
+                      <p className="mb-2 font-bold poppins-regular">
+                        Bug report
+                      </p>
+                      <p className="text-neutral-500 poppins-regular">
+                        bugs@example.com
+                      </p>
+                      <p className="text-neutral-500  poppins-regular">
+                        +1 234-567-89
+                      </p>
                     </div>
                   </div>
                 </div>
