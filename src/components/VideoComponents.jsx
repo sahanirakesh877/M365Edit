@@ -4,15 +4,15 @@ import "react-alice-carousel/lib/alice-carousel.css";
 
 const VideoCard = () => {
   const images = [
-    "/upwork1.png",
-    "/upwork2.png",
-    "/upwork3.png",
-    "/upwork4.png",
-    "/upwork5.png",
+    "/upwork1 copy.png",
+    "/upwork2 copy.png",
+    "/upwork3 copy.png",
+    "/upwork4 copy.png",
+    "/upwork5 copy.png",
     "/upwork6.png",
     "/upwork7.png",
-    "/upwork8.png",
-    "/upwork10.png",
+    "/upwork8 copy.png",
+    "/upwork10 copy.png",
     "/upwork11.png",
     "/upwork12.png",
     "/upwork13.png",
