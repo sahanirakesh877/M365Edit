@@ -24,16 +24,18 @@ const ServiceDetails = () => {
         <p className="text-center pb-8 text-md poppins-regular py-6">{selectedData.paragrap}</p>
         <div>
           {selectedData.subheading.map((subtitles, index) => (
-            <div key={index} className="mb-8">
+            <div key={index} className="mb-8 ">
               <h2 className="text-center font-bold text-2xl py-6 text-brand  poppins-semibold">{subtitles.title}</h2>
-              <ul className="list-disc">
+              <div className="border-brand border p-8">
+              <ul className="list-disc ">
                 {subtitles.sub_titles.map((list, index) => (
-                  <li key={index} className="font-bold text-xl py-1 poppins-regular">
-                    <strong className="poppins-bold">{list.sub_title}</strong>:{" "}
+                  <li key={index} className="font-bold text-xl py-1 poppins-regular ">
+                    <strong className="poppins-regular text-brand">{list.sub_title}</strong>:{" "}
                     <span className="font-normal text-md poppins-regular">{list.text}</span>
                   </li>
                 ))}
               </ul>
+              </div>
             </div>
           ))}
         </div>
