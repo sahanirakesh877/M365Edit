@@ -12,10 +12,13 @@ import { Helmet } from "react-helmet";
 const Home = () => {
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>m365pros</title>
         <meta name="description" content="Description of your website" />
-      </Helmet>
+      </Helmet> */}
+      <Helmet titleTemplate="m365pros" />
+      
+   
       <Banner />
       <Review />
       <MeetProfessional />

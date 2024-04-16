@@ -4,18 +4,15 @@ import "react-alice-carousel/lib/alice-carousel.css";
 
 const VideoCard = () => {
   const images = [
-    "/upwork1 copy.png",
-    "/upwork2 copy.png",
-    "/upwork3 copy.png",
-    "/upwork4 copy.png",
-    "/upwork5 copy.png",
-    "/upwork6.png",
-    "/upwork7.png",
-    "/upwork8 copy.png",
-    "/upwork10 copy.png",
-    "/upwork11.png",
-    "/upwork12.png",
-    "/upwork13.png",
+    "/review/kns1.png",
+    "/review/kns2.png",
+    "/review/kns3.png",
+    "/review/kns-4.png",
+    "/review/kns-5.png",
+    "/review/kns-7.png",
+    "/review/kns-8.png",
+    
+ 
    
   ];
 
@@ -33,7 +30,7 @@ const VideoCard = () => {
         </p>
         <p className="poppins-semibold">What our clients say?</p>
       </div>
-      <div className="container mx-auto px-5 md:px-8 py-4 ">
+      <div className="container mx-auto px-5 md:px-8 py-12 ">
         <AliceCarousel
           mouseTracking
           controlsStrategy="alternate"
