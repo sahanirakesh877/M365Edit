@@ -1,6 +1,29 @@
 import React from "react";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 const Banner = () => {
+  const images = [
+    "/m-access.png",
+    "/m-book.png",
+    "/Office-icon.png",
+    "/visual-studio-logo-14F95CF819-seeklogo.com.png",
+    "/Microsoft_Forms_(2019-present).svg.png",
+    "/m-ex.png",
+    "/m-exchange.png",
+    "/Microsoft_Entra_ID_color_icon.svg.png",
+    "/m-outlook.png",
+    "/m-powerpoint.png",
+    "/m-projects.jpeg",
+    "/m-publisher.png",
+    "/m-team.png",
+    "/m-visio.png"
+  ];
+  const responsive = {
+    0: { items: 3},
+    568: { items: 4 },
+    1024: { items: 6 },
+  };
   return (
     <>
       <section className="bg-white  dark:bg-gray-900 overflow-hidden">
@@ -36,77 +59,33 @@ const Banner = () => {
           </div>
 
           {/* photo section */}
+          <AliceCarousel
+                  mouseTracking
+                  controlsStrategy="alternate"
+                  autoPlay
+                  infinite
+                  disableDotsControls
+                  disableButtonsControls
+                  responsive={responsive}
+                  animationType="fadeout"
+                  autoPlayInterval={1000}
+                  autoPlayDirection="rtl"
+                  startIndex={0}
+                  lazyLoad
+                >
+                  {images.map((image, index) => (
+                    <div key={index} className="lg:w-[150px] h-[auto] lg:px-8  w-[60px]  ">
+                      <img
+                        src={image}
+                        className="sliderimg "
+                        alt={`image-${index}`}
+                        style={{ width: "100%", height: "auto" }}
+                      />
+                    </div>
+                  ))}
+                </AliceCarousel>
 
-          <div className=" ">
-            <div className="flex justify-between items-center  pt-4">
-              <div className="h-[80px] w-[80px]">
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://i.pinimg.com/564x/46/aa/96/46aa967637e21e2a7f7bbef5196a663c.jpg"
-                  alt
-                />
-              </div>
-
-              <div className="h-[80px] w-[80px]">
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://cdn.worldvectorlogo.com/logos/microsoft-project-2019-present-.svg"
-                  alt
-                />
-              </div>
-
-              <div className="h-[80px] w-[80px]">
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/512px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png"
-                  alt
-                />
-              </div>
-
-
-              <div className="h-[80px] w-[80px]">
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://icons.iconarchive.com/icons/blackvariant/button-ui-ms-office-2016/512/Office-icon.png"
-                  alt
-                />
-              </div>
-
-
-              <div className="h-[80px] w-[80px]">
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg/512px-Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg.png"
-                  alt
-                />
-              </div>
-
-              <div className="h-[80px] w-[80px]">
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Microsoft_Office_Teams_%282018%E2%80%93present%29.svg/2203px-Microsoft_Office_Teams_%282018%E2%80%93present%29.svg.png"
-                  alt
-                />
-              </div>
-
-              <div className="h-[80px] w-[80px]">
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://w7.pngwing.com/pngs/344/883/png-transparent-laptop-microsoft-onenote-computer-software-microsoft-office-365-onenote-purple-electronics-violet-thumbnail.png"
-                  alt
-                />
-              </div>
-
-              <div className="h-[80px] w-[80px]">
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg/512px-Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg.png"
-                  alt
-                />
-              </div>
-
-            </div>
-          </div>
+          
         </div>
       </section>
     </>
