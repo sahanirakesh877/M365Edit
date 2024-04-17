@@ -65,7 +65,7 @@ const servicedata = [
     ],
 
     image:
-      "https://i.pinimg.com/564x/46/aa/96/46aa967637e21e2a7f7bbef5196a663c.jpg",
+      "/emailimmigration.jpg",
 
     conclusion: [
       "Switch to Microsoft Exchange Online Service with M365 Pros and experience a hassle-free email migration. Contact us today for more information.",
@@ -117,7 +117,7 @@ const servicedata = [
     ],
 
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/512px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png",
+      "/microsoft-azure-icon-512x396-6fn0yfat.png",
     conclusion: [
       "Our migration services start from $2000. Switch to Microsoft’s cloud-based identity system with M365 Pros and experience a hassle-free AD to Intra ID migration. Contact us today for more information.",
     ],
@@ -167,7 +167,7 @@ const servicedata = [
     ],
 
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg/512px-Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg.png",
+      "/Microsoft_Entra_ID_color_icon.svg.png",
     conclusion:
       "Our Intune deployment services start from $1500. Experience a hassle-free Microsoft Intune deployment with M365 Pros. Contact us today for more information.",
   },
@@ -217,7 +217,7 @@ const servicedata = [
     ],
 
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg/512px-Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg.png",
+      "/m-security.png",
     conclusion:
       "Our security implementation services start from $2500. Secure your Microsoft 365 environment with M365 Pros. Contact us today for more information.",
     note: "Please note that the prerequisite for this service is to have an M365 Business Premium subscription or the customer’s willingness to purchase this subscription.",
@@ -268,7 +268,7 @@ const servicedata = [
     ],
 
     image:
-      "https://w7.pngwing.com/pngs/344/883/png-transparent-laptop-microsoft-onenote-computer-software-microsoft-office-365-onenote-purple-electronics-violet-thumbnail.png",
+      "/Microsoft_365_Copilot_Icon.svg.png",
     conclusion:
       "Our onboarding services start from $500. Enhance your business operations with M365 Pros. Contact us today for more information.",
     note: "Please note that the prerequisite for this service is to have an M365 Copilot subscription or the customer’s willingness to purchase this subscription.",
@@ -277,7 +277,7 @@ const servicedata = [
 
   {
     id: "6",
-    title: "Microsoft 365 Copilot Onboarding  ",
+    title: "Microsoft 365  ",
     paragrap:
       "At M365 Pros, we offer comprehensive onboarding services for Microsoft 365 Copilot.",
 
@@ -320,7 +320,7 @@ const servicedata = [
     ],
 
     image:
-      "https://w7.pngwing.com/pngs/344/883/png-transparent-laptop-microsoft-onenote-computer-software-microsoft-office-365-onenote-purple-electronics-violet-thumbnail.png",
+      "/officem365.png",
     conclusion:
       "Our onboarding services start from $500. Enhance your business operations with M365 Pros. Contact us today for more information.",
     note: "Please note that the prerequisite for this service is to have an M365 Copilot subscription or the customer’s willingness to purchase this subscription.",

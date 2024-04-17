@@ -78,7 +78,7 @@ const MeetProfessional = () => {
                   </div>
                 </div>
               </div>
-              <div className="">
+              <div className=" ">
                 <AliceCarousel
                   mouseTracking
                   controlsStrategy="alternate"
@@ -94,7 +94,7 @@ const MeetProfessional = () => {
                   lazyLoad
                 >
                   {images.map((image, index) => (
-                    <div key={index} className="w-[198px] h-[135px] lg:px-8   ">
+                    <div key={index} className="w-[198px] h-[135px] lg:px-8  ">
                       <img
                         src={image}
                         className="sliderimg "

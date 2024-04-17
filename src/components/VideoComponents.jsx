@@ -17,7 +17,7 @@ const VideoCard = () => {
   ];
 
   const responsive = {
-    0: { items: 2 },
+    0: { items: 1 },
     568: { items: 2 },
     1024: { items: 3 },
   };
@@ -25,10 +25,10 @@ const VideoCard = () => {
   return (
     <section className="py-24 bg-white">
       <div className="flex flex-col items-center ">
-        <p className="text-center poppins-semibold text-brand font-semibold text-4xl lg:text-4xl md:text-lg sm:text-lg">
+        <p className="text-center lg:poppins-semibold text-brand font-semibold text-4xl lg:text-4xl md:text-lg sm:text-lg px-4">
           Customer's Reviews
         </p>
-        <p className="poppins-semibold">What our clients say?</p>
+        <p className="poppins-semibold ">What our clients say?</p>
       </div>
       <div className="container mx-auto px-5 md:px-8 py-12 ">
         <AliceCarousel
@@ -40,17 +40,15 @@ const VideoCard = () => {
           disableButtonsControls
           responsive={responsive}
           animationType="fadeout"
-          autoPlayInterval={3000}
+          autoPlayInterval={1000}
           autoPlayDirection="rtl"
           startIndex={0}
           lazyLoad
         >
           {images.map((image, index) => (
-            <div key={index} className="px-8 clientReview ">
+            <div key={index} className="px-8 clientReview  w-full">
               <img 
                 src={image}
-                // className="sliderimg object-fit border "
-    
                 alt={`image-${index}`}
                 style={{ width: "100%", height: "auto" }}
               />

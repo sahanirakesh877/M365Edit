@@ -20,11 +20,11 @@ const Services = () => {
             Microsoft 365, formerly known as Office 365, is a suite of
             cloud-based productivity tools and services offered by Microsoft.
           </p>
-          <ul className="mt-12 grid grid-cols-1 gap-6 text-center text-slate-800 md:grid-cols-2">
+          <ul className="mt-12 grid grid-cols-1 gap-10 text-center text-slate-800 md:grid-cols-2">
             {servicedata.map((a, id) => {
               return (
                 <>
-                  <li className="  px-6 py-8  servicecss   shadow-lg">
+                  <li className="  px-6 py-8 servicecss  customshadow  bg-white rounded-tl-3xl rounded-br-3xl ">
                     <Link to={`/service/${a.id}`}>
                       <img
                         src={a.image}
@@ -34,9 +34,9 @@ const Services = () => {
                       <h3 className="font-semibold text-xl poppins-semibold text-center pb-2">
                         {a.title}
                       </h3>
-                      <p className="mt-1 text-gray-500 poppins-regular text-justify">
+                      {/* <p className="mt-1 text-gray-500 poppins-regular text-justify">
                         {a.paragrap.slice(0, 100)} . . . . . . . .
-                      </p>
+                      </p> */}
                     </Link>
                   </li>
                 </>
