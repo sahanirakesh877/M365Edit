@@ -24,7 +24,7 @@ const Services = () => {
             {servicedata.map((a, id) => {
               return (
                 <>
-                  <li className="  px-6 py-8 servicecss  customshadow  bg-white rounded-tl-3xl rounded-br-3xl ">
+                  <li className="  px-6 py-8 servicecss  customshadow  rounded-tl-3xl rounded-br-3xl ">
                     <Link to={`/service/${a.id}`}>
                       <img
                         src={a.image}

@@ -25,10 +25,10 @@ const VideoCard = () => {
   return (
     <section className="py-24 bg-white">
       <div className="flex flex-col items-center ">
-        <p className="text-center lg:poppins-semibold text-brand font-semibold text-4xl lg:text-4xl md:text-lg sm:text-lg px-4">
+        <p className="text-4xl text-brand poppins-semibold pb-4 poppins-bold">
           Customer's Reviews
         </p>
-        <p className="poppins-semibold ">What our clients say?</p>
+        <p className="text-[16px] text-center poppins-regular ">What our clients say?</p>
       </div>
       <div className="container mx-auto px-5 md:px-8 py-12 ">
         <AliceCarousel
