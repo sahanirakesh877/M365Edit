@@ -26,7 +26,7 @@ const Pricing = () => {
               unlock long-term{" "}
             </p>
           </div>
-          <div className="grid grid-cols-1  gap-6 sm:grid-cols-2 lg:grid-cols-3 px-6   container mx-auto text-zinc-800 mt-10">
+          <div className="grid grid-cols-1  gap-10 sm:grid-cols-2 lg:grid-cols-3 px-6   container mx-auto text-zinc-800 mt-10">
             {pricedata.map((a, id) => {
               return (
                 <>

@@ -13,7 +13,7 @@ const Contact = () => {
         <section className="">
           <div className="flex justify-center">
             <div className="text-center md:max-w-xl lg:max-w-3xl mb-12 ">
-              <div className="flex justify-center items-center  py-8  ">
+              <div className="flex justify-center items-center   ">
                 <div className="border-t-2 border-brand  w-[40px]"></div>
                 <h2 className="px-2 text-4xl font-semibold poppins-bold text-brand text-nowrap ">
                   Contact us
