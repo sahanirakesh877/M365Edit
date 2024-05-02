@@ -34,9 +34,9 @@ const Services = () => {
                       <h3 className="font-semibold text-xl poppins-semibold text-center pb-2">
                         {a.title}
                       </h3>
-                      {/* <p className="mt-1 text-gray-500 poppins-regular text-justify">
-                        {a.paragrap.slice(0, 100)} . . . . . . . .
-                      </p> */}
+                      <p className="mt-1 text-gray-500 poppins-regular text-justify">
+                        {a.paragrap.slice(13, 100)}   .  .  .
+                      </p> 
                     </Link>
                   </li>
                 </>
